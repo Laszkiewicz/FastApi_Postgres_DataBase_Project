@@ -1,0 +1,30 @@
+fastapi
+uvicorn
+
+# for template
+jinja2
+
+# for static files
+aiofiles
+
+# for loading environment variables
+python-dotenv
+
+
+# for session
+
+sqlalchemy
+sqlalchemy.orm
+
+
+#for hashing
+
+passlib[bcrypt]
+
+#for email validation
+
+pydantic[email]
+
+# for testing
+pytest
+requests
