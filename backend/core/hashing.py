@@ -13,13 +13,8 @@ class Hasher():
         return pwd_context.hash(password)
 
 
-
 if __name__ == "__main__":
     hash_pass = Hasher.get_password_hash("Hello")
     print(hash_pass)
     unhash = Hasher.verify_password("Hello", hash_pass)
     print(unhash)
-
-
-
-

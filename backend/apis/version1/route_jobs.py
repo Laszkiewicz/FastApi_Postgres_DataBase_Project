@@ -41,7 +41,7 @@ def update_job(id: int, job: JobCreate, db: Session = Depends(get_db)):
     return {"msg": "Successfully updated data."}
 
 
-@router.delete("/delete/{id}")
+@router.delete("/{id}")
 def delete_job(id: int, db: Session = Depends(get_db)):
     current_user_id = 1
     message = delete_job_by_id(id=id, db=db, owner_id=current_user_id)
